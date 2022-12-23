@@ -1,4 +1,4 @@
-.our-team {
+.our-team_bg {
     background-color: var(--secondary-page-color);
 }
 
@@ -9,12 +9,15 @@
     // line-height: 1.17;
     // text-align: center;
     // letter-spacing: 0.03em;
+    
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 28px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+
+
 }
 
 .our-team__list {
@@ -24,9 +27,13 @@
 }
 
 .our-team__item {
-    width: 100%;
-    flex-basis: calc(100% - 90px) / 4;
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
     }
+        @media screen and (min-width: 1600px) {
+            width: calc((100% - 90px) / 4) ;
+        }
+}
 
 .our-team__member {
     padding-top: 30px;
