@@ -212,15 +212,28 @@ img {
 
 .skills__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-.skills__list .item:not(:last-child) {
-  margin-right: 30px;
+
+.skills__item {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .skills__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .skills__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .skills__icon {
   margin-bottom: 30px;
   display: flex;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: var(--secondary-page-color);
   border-radius: 4px;
@@ -235,6 +248,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .skills__about {
@@ -244,13 +258,21 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1600px) {
+  .our-work {
+    display: none;
+  }
+}
+
 .our-work__list {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.our-work__list .item {
-  flex-basis: calc(100% - 60px)/3;
+
+.our-work__item {
+  width: calc(100% - 60px)/3;
 }
 
 .our-work__title {
@@ -382,12 +404,18 @@ img {
 
 .client__list {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.client__item:not(:last-child) {
-  margin-right: 30px;
+.client__item {
+  width: 100%;
+  display: flex;
+}
+@media screen and (min-width: 480px) {
+  .client__item {
+    width: calc(100% - 15px);
+  }
 }
 
 .client__link {
