@@ -2,6 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
+    @media screen and (min-width: 1600px) {
+            justify-content: center;
+        }
 }
 
 .skills__item {
@@ -10,8 +14,9 @@
     @media screen and (min-width: 768px) {
             width: calc((100% - 30px) / 2);
         }
+
     @media screen and (min-width: 1600px) {
-            width: calc((100% - 90px) / 4);
+            width: 270px;
         }
  }
 
@@ -19,7 +24,7 @@
 .skills__icon {
     margin-bottom: 30px;
     display: flex;
-    width: 100%;
+    width: auto;
     height: 120px;
     background-color: var(--secondary-page-color);
     border-radius: 4px;

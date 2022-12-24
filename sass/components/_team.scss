@@ -3,27 +3,31 @@
 }
 
 .our-team__title {
-    // margin-bottom: 50px;
-    // font-weight: 700;
-    // font-size: 36px;
-    // line-height: 1.17;
-    // text-align: center;
-    // letter-spacing: 0.03em;
-    
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 28px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-
-
+    
+        @media screen and (min-width: 1600px) {
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+            letter-spacing: 0.03em;
+    }
 }
 
 .our-team__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and (min-width: 1600px) {
+        justify-content: center;
+    }
 }
 
 .our-team__item {
@@ -31,7 +35,7 @@
             width: calc((100% - 30px) / 2);
     }
         @media screen and (min-width: 1600px) {
-            width: calc((100% - 90px) / 4) ;
+            width: 270px;
         }
 }
 

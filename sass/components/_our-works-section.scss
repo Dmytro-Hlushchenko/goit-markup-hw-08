@@ -6,15 +6,14 @@
 }
 
 .our-work__list {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-
+    justify-content: center;
 }
 
 .our-work__item {
-        width: calc(100% - 60px) / 3;
+    width: calc(100% - 60px) / 3;
 }
 
 .our-work__title {

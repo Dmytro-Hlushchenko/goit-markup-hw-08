@@ -12,10 +12,14 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and (min-width: 1600px) {
+        justify-content: center;
+    }
 }
 
 .client__item {
-                
+               
         @media screen and (min-width: 480px) {
             width: calc((100% - 30px) / 2);
         }
@@ -25,12 +29,12 @@
         }
 
         @media screen and (min-width: 1600px) {
-            width: calc((100% - 180px) / 6);
+            width: 170px;
         }
     }
 
 .client__link {
-    width: 100%;
+    width: auto;
     height: 92px;
     display: flex;
     fill: var(--not-active-icon-color);
@@ -47,5 +51,13 @@
             fill: var(--active-text-color);
             border-color: var(--active-text-color);
         }
+    
+    
+    @media screen and (min-width: 1600px) {
+        width: 170px;
+            
+    }
+
+    
 }
 
