@@ -1,8 +1,11 @@
 @import './utils/variables';
+@import './utils/mixin';
+
 @import './base/reset';
 @import './base/common';
 @import './base/container';
 @import './base/section';
+
 @import './components/header';
 @import './components/hero';
 @import './components/skills-section';
@@ -10,6 +13,9 @@
 @import './components/team';
 @import './components/clients';
 @import './components/footer';
-@import './modal/modal';
+
 @import './components/portfolio-filter-btn';
 @import './components/portfolio-project-set.scss';
+
+@import './modal/modal';
+
