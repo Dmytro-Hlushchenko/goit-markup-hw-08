@@ -606,6 +606,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer-soc-links {
+    align-items: flex-start;
     margin-left: 70px;
     margin-bottom: 0px;
   }
@@ -695,6 +696,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-email__input {
     width: 358px;
+    margin-bottom: 0px;
   }
 }
 
