@@ -45,10 +45,53 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">O</button>
       </div>
     </header>
-    <main> 
+ 
+    <!-- Mobile Menu -->
 
+    <div class="container">
+      <div class="mobile-menu">
+        <div class="mob-nav">
+          <div>
+            <button type="button" class="menu-close-btn">X</button>
+          </div>
+          <ul class="mob-nav__list list">
+              <li class="mob-nav__item"><a class="mob-nav__link link" href="./index.html">Студія</a></li>
+              <li class="mob-nav__item"><a class="mob-nav__link link" href="./portfolio.html">Портфоліо</a></li>
+              <li class="mob-nav__item"><a class="mob-nav__link link" href="">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="mob-menu-contacts-box">
+          <div class="mob-menu-tel">
+            <a class="mob-menu-tel-link link" href="tel:+380961111111">+38 (096) 111 11 11</a>
+          </div>
+          <div class="mob-menu-email">
+            <a class="mob-menu-email-link link" href="mailto:info@devstudio.com" target="_blank" lang="en">info@devstudio.com</a>
+          </div>
+
+          <div class="mob-soc-links">
+            <ul class="mob-soc-list list" >
+              <li class="mob-soc-item">
+                <a href="#" class="mob-soc-link link">Instagram</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="#" class="mob-soc-link link">Twitter</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="#" class="mob-soc-link link">Facebook</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="#" class="mob-soc-link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+<main>
+  
 <!-- Hero section -->
 
       <section class="section">
@@ -126,6 +169,8 @@
         </div>
       </section>
 
+<!-- Our-work section -->
+      
       <section class="our-work section no-padding ">
         <div class="container">
           <h2 class="our-work__title">Чим ми займаємося</h2>
@@ -572,5 +617,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
