@@ -1,45 +1,49 @@
-.header {
+.header__border {
     border-bottom: 1px solid #ECECEC;
 }
 
-.logo {
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;    
+}
+
+.header__navigation-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header__logo {
     padding-top: 24px;
     padding-bottom: 25px;
-
-    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
 
-.logo__web {
+.header__logo-web {
     color: var(--active-text-color);
 }
 
-.logo__studio {
+.header__logo-studio {
     color: #000000;
 }
 
-.navigation {
-    display: flex;
-    align-items: center;    
-}
-
-.navigation__list {
+.header__navigation-list {
     display: flex;
     margin-left: 93px;
     & .current.link{
         color: var(--active-text-color);
         }
-    & .item:not(:last-child) {
-        margin-right: 50px;
-        }
+
     & .link {
         color: #212121;
         padding: 32px 0;
         display: block;
-
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -50,7 +54,7 @@
             &:focus {
             color: var(--active-text-color);
         }
-}
+    }
     
 }
 
@@ -69,16 +73,16 @@
 }
 }
 
-.contacts {
+.header__contacts {
     display: flex;
     margin-left: auto;
-    & .item:not(:last-child) {
-        margin-right: 50px;
-    }
-    & .link {
+}
+    .header__contacts-link {
         margin-left: auto;
         padding: 32px 0px;
-    
+        display: flex;
+        align-items: center;
+
         color: var(--secondary-text-color);
         font-weight: 500;
         font-size: 14px;
@@ -90,18 +94,15 @@
             &:hover,
             &:focus {
                 color: var(--active-text-color);
-            }
-    }
-    
+         }
 }
+    
+.header__contacts-item:not(:last-child) {
+        margin-right: 50px;
+    }
 
-.contacts__icons {
+.header__contacts-icons {
     fill: currentColor;
     margin-right: 10px;
-}
-
-.contacts__link {
-    display: flex;
-    align-items: center
 }
 

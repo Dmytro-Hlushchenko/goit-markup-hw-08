@@ -71,44 +71,49 @@ img {
   padding-top: 0px;
 }
 
-.header {
+.header__border {
   border-bottom: 1px solid #ECECEC;
 }
 
-.logo {
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
-  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
-.logo__web {
+.header__logo-web {
   color: var(--active-text-color);
 }
 
-.logo__studio {
+.header__logo-studio {
   color: #000000;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation__list {
+.header__navigation-list {
   display: flex;
   margin-left: 93px;
 }
-.navigation__list .current.link {
+.header__navigation-list .current.link {
   color: var(--active-text-color);
 }
-.navigation__list .item:not(:last-child) {
-  margin-right: 50px;
-}
-.navigation__list .link {
+.header__navigation-list .link {
   color: #212121;
   padding: 32px 0;
   display: block;
@@ -118,7 +123,7 @@ img {
   letter-spacing: 0.02em;
   transition: color 250ms var(--cubic-bezier-primary);
 }
-.navigation__list .link:hover, .navigation__list .link:focus {
+.header__navigation-list .link:hover, .header__navigation-list .link:focus {
   color: var(--active-text-color);
 }
 
@@ -136,16 +141,16 @@ img {
   border-radius: 4px;
 }
 
-.contacts {
+.header__contacts {
   display: flex;
   margin-left: auto;
 }
-.contacts .item:not(:last-child) {
-  margin-right: 50px;
-}
-.contacts .link {
+
+.header__contacts-link {
   margin-left: auto;
   padding: 32px 0px;
+  display: flex;
+  align-items: center;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -155,18 +160,17 @@ img {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier-primary);
 }
-.contacts .link:hover, .contacts .link:focus {
+.header__contacts-link:hover, .header__contacts-link:focus {
   color: var(--active-text-color);
 }
 
-.contacts__icons {
-  fill: currentColor;
-  margin-right: 10px;
+.header__contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
-.contacts__link {
-  display: flex;
-  align-items: center;
+.header__contacts-icons {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* Hero styles */
@@ -687,6 +691,7 @@ img {
   border-radius: 4px;
   margin-bottom: 20px;
   height: 50px;
+  padding-left: 16px;
 }
 @media screen and (min-width: 480px) {
   .footer-email__input {
