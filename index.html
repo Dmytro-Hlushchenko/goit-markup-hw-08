@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <header class="header__border">
+      <header class="header__border">
       <div class="container header">
         <nav class="header__navigation">
           <a class="header__logo link" href="./index.html" lang="en"><span class="header__logo-web">Web</span><span class="header__logo-studio">Studio</span></a>
@@ -45,17 +45,30 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="menu-open-btn">O</button>
+        <button type="button" class="menu-open-btn">
+          <svg
+                width="40"
+                height="40"
+                class="header-mobile-menu-icon-open">
+                <use href="./images/mob-menu-close_.svg"/>
+          </svg>
+        </button>
       </div>
     </header>
  
     <!-- Mobile Menu -->
 
-    <div class="container">
-      <div class="mobile-menu">
+      <div class="container mobile-menu">
         <div class="mob-nav">
           <div>
-            <button type="button" class="menu-close-btn">X</button>
+            <button type="button" class="menu-close-btn">
+               <svg
+                width="40"
+                height="40"
+                class="header-mobile-menu-icon-open">
+                <use href="./images/mob-menu-open.svg"/>
+          </svg>
+            </button>
           </div>
           <ul class="mob-nav__list list">
               <li class="mob-nav__item"><a class="mob-nav__link link" href="./index.html">Студія</a></li>
@@ -89,7 +102,6 @@
           </div>
         </div>
       </div>
-    </div>
 <main>
   
 <!-- Hero section -->
