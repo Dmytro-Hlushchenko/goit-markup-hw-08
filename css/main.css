@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-page-color: #ffffff;
   --secondary-page-color: #F5F4FA;
@@ -206,7 +207,7 @@ img {
   }
 }
 
-.header__contacts-icons {
+ЕФЕКТИВНІ .header__contacts-icons {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -567,6 +568,9 @@ img {
   }
 }
 
+.our-team__item {
+  width: 450px;
+}
 @media screen and (min-width: 768px) {
   .our-team__item {
     width: calc((100% - 30px) / 2);
