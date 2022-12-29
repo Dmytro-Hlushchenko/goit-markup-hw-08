@@ -143,9 +143,15 @@
 
 
 .menu-open-btn {
-    margin-left: auto;
     padding: 0;
     border: none;
+    background-color: inherit;
+
+    transition: fill 250ms var(--cubic-bezier-primary);
+        &:hover,
+        &:focus {
+            fill: var(--active-text-color);
+        }
     
     @media screen and (min-width: 768px) {
         display: none;
@@ -153,13 +159,24 @@
 }
 
 .menu-close-btn {
+    position: absolute;
     display: block;
     margin-left: auto;
     padding: 0;
     border: none;
+    background-color: inherit;
+    top: 21px;
+    right: 25px;
+
+    transition: fill 250ms var(--cubic-bezier-primary);
+        &:hover,
+        &:focus {
+            fill: var(--active-text-color);
+        }
 }
 
 .mobile-menu {
+    position: relative;
     display: none;
 }
 
@@ -175,9 +192,16 @@
     padding: 48px 40px;
     background-color: #ffffff;
 
+
     @media screen and (min-width: 768px) {
         display: none;
     }
+}
+
+.mob-nav {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .mob-nav__item {
