@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --primary-page-color: #ffffff;
   --secondary-page-color: #F5F4FA;
@@ -207,8 +206,8 @@ img {
   }
 }
 
-ЕФЕКТИВНІ .header__contacts-icons {
-  fill: currentColor;
+.header__contacts-icons {
+  fill: var(--secondary-text-color);
   margin-right: 10px;
 }
 
