@@ -258,14 +258,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier-primary);
-}
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
+  transition: transform 250ms var(--cubic-bezier-primary);
 }
 
 .mobile-menu.is-open {
