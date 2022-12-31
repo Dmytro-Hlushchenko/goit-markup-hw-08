@@ -351,23 +351,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-@-webkit-keyframes mob-menu-bg {
-  0% {
-    background-color: none;
-  }
-  100% {
-    background-color: #ffffff;
-  }
-}
-
-@keyframes mob-menu-bg {
-  0% {
-    background-color: none;
-  }
-  100% {
-    background-color: #ffffff;
-  }
-}
 /* Hero styles */
 .hero {
   display: flex;
