@@ -922,15 +922,23 @@ img {
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 .filter .item:not(:last-child) {
   margin-right: 8px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .filter {
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -961,6 +969,20 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.project-set__item {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .project-set__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-set__item {
+    width: 370px;
+  }
 }
 
 .project-set__link {
@@ -995,6 +1017,11 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .project-set__title {
+    height: 147px;
+  }
 }
 
 .project-set__thumb {
